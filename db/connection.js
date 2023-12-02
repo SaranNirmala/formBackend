@@ -14,7 +14,7 @@ const cloudUrl =`mongodb+srv://${userName}:${password}@${cluster}/${dbName}?retr
 
 const connectToDb= () =>{
   try{
-    const db= mongoose.connect(cloudUrl);
+    const db= mongoose.connect(localdb);
     if(db){
         console.log("Connection to Database")
         
